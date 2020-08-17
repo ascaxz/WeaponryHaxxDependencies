@@ -62,13 +62,6 @@ function Init()
     cleartb(TaggedPlayers)
     cleartb(PlayerNames)
 
-    watermark = Drawing.new("Text")
-    watermark.Text = "Indica's ESP v1.0"
-    watermark.Color = Color3.new(153 / 255, 5 / 255, 204 / 255)
-    watermark.Position = Vector2.new(camera.ViewportSize.X - 160, camera.ViewportSize.Y - 25)
-    watermark.Size = 24.0
-    watermark.Outline = true
-    watermark.Visible = true
     Wait(1)
     Paused = false
 end
