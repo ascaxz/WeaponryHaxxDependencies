@@ -61,14 +61,15 @@ function Init()
     cleartb(LinedPlayers)
     cleartb(TaggedPlayers)
     cleartb(PlayerNames)
+
     watermark = Drawing.new("Text")
-    watermark.Text = "cum"
+    watermark.Text = "Indica's ESP v1.0"
     watermark.Color = Color3.new(153 / 255, 5 / 255, 204 / 255)
     watermark.Position = Vector2.new(camera.ViewportSize.X - 160, camera.ViewportSize.Y - 25)
     watermark.Size = 24.0
     watermark.Outline = true
     watermark.Visible = true
-    wait(1)
+    Wait(1)
     Paused = false
 end
 
@@ -119,7 +120,7 @@ Players.PlayerAdded:connect(
         cleartb(PlayerNames)
         Paused = false
         delay(.5, function()
-            ToggleEvent:Fire(true)
+            ToggleEvent:Fire(Visible)
         end)
     end
 )
@@ -134,7 +135,7 @@ Players.PlayerRemoving:connect(
         cleartb(PlayerNames)
         Paused = false
         delay(.5, function()
-            ToggleEvent:Fire(true)
+            ToggleEvent:Fire(Visible)
         end)
     end
 )
