@@ -79,6 +79,7 @@ function LoadESP()
                     TaggedPlayers[i].Color = v.TeamColor.Color
                     TaggedPlayers[i].Outline = true
                     TaggedPlayers[i].Center = true
+                    TaggedPlayers[i].Fonts = "UI"
 
                     LinedPlayers[i].Thickness = 1.6
                     LinedPlayers[i].Color = v.TeamColor.Color
